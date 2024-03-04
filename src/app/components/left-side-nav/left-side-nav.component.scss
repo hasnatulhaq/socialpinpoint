@@ -18,13 +18,19 @@
     .left-side-nav-menu{
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 15px;
         .left-side-nav-button{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
+            padding: 10px 0px 10px 0px;
+            cursor: pointer;
+            color: #003a72;
+            &:hover{
+                background-color: #3f51b526;
+            }
         }
     }
     }
