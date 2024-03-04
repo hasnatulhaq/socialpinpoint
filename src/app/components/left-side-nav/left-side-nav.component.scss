@@ -1,7 +1,9 @@
 .left-side-nav{
     background-color: white;
-    // display: flex;
-    // position: absolute;
+    display: flex;
+    position: absolute;
+    top: 5rem;
+    // z-index: 1000 !important;
     left: 0;
     height: calc(100vh - 5rem);
     width: 5rem;
