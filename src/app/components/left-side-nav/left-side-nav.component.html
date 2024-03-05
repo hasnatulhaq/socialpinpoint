@@ -1,21 +1,21 @@
 <nav class="left-side-nav">
     <div class="left-side-nav-content">
         <div class="left-side-nav-menu">
-            <div class="left-side-nav-button">
+            <div class="left-side-nav-button" (click)="openPanel('Activity')">
                 <mat-icon>chat</mat-icon>
                 <small>Activity</small>
             </div>
-            <div class="left-side-nav-button">
+            <div class="left-side-nav-button" (click)="openPanel('Instructions')">
                 <mat-icon>info</mat-icon>
-                <small>Instruction</small>
+                <small>Instructions</small>
             </div>
-            <div class="left-side-nav-button">
+            <div class="left-side-nav-button" (click)="openPanel('Terms-and-conditions')">
                 <mat-icon>description</mat-icon>
-                <small>Activity</small>
-            </div>
-            <div class="left-side-nav-button">
-                <mat-icon>help</mat-icon>
                 <small>Terms and conditions</small>
+            </div>
+            <div class="left-side-nav-button" (click)="openPanel('About')">
+                <mat-icon>help</mat-icon>
+                <small>About</small>
             </div>
         </div>
         <div>
@@ -30,27 +30,9 @@
             <mat-icon  (click)="closePanel()">close</mat-icon>
         </div>
         <div class="left-side-panel__content">
-            <p>
-                In 2009, City Council adopted the Western Waterfront Master Plan, establishing an overarching vision for the Western Beaches and providing a guide for future upgrades to the public realm, including parks, trails, and roads. The Western Beaches includes, from west to east, Sir Casimir Gzowski Park, Sunnyside Park, Budapest Park, the Lake Shore Boulevard Parklands, and Marilyn Bell Park. 
-
-A lot has changed over the past fifteen years or so since the Master Plan was adopted. In order to better understand and meet emerging needs and reevaluate priorities, the Plan is undergoing a refresh. This Social Pinpoint interactive mapping tool is an opportunity for you to share your feedback about the experience visiting and/or travelling through the Western Beaches.
-
-Visit the Western Beaches project webpage to learn more.
-            </p>
-            <p>
-                In 2009, City Council adopted the Western Waterfront Master Plan, establishing an overarching vision for the Western Beaches and providing a guide for future upgrades to the public realm, including parks, trails, and roads. The Western Beaches includes, from west to east, Sir Casimir Gzowski Park, Sunnyside Park, Budapest Park, the Lake Shore Boulevard Parklands, and Marilyn Bell Park. 
-
-A lot has changed over the past fifteen years or so since the Master Plan was adopted. In order to better understand and meet emerging needs and reevaluate priorities, the Plan is undergoing a refresh. This Social Pinpoint interactive mapping tool is an opportunity for you to share your feedback about the experience visiting and/or travelling through the Western Beaches.
-
-Visit the Western Beaches project webpage to learn more.
-            </p>
-            <p>
-                In 2009, City Council adopted the Western Waterfront Master Plan, establishing an overarching vision for the Western Beaches and providing a guide for future upgrades to the public realm, including parks, trails, and roads. The Western Beaches includes, from west to east, Sir Casimir Gzowski Park, Sunnyside Park, Budapest Park, the Lake Shore Boulevard Parklands, and Marilyn Bell Park. 
-
-A lot has changed over the past fifteen years or so since the Master Plan was adopted. In order to better understand and meet emerging needs and reevaluate priorities, the Plan is undergoing a refresh. This Social Pinpoint interactive mapping tool is an opportunity for you to share your feedback about the experience visiting and/or travelling through the Western Beaches.
-
-Visit the Western Beaches project webpage to learn more.
-            </p>
+                <!-- <app-about></app-about> -->
+                <!-- <app-instructions></app-instructions> -->
+                <app-terms-and-conditions></app-terms-and-conditions>
         </div>
     </div>
 </div>
