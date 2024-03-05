@@ -1,0 +1,65 @@
+
+
+.comment-search{
+    display: flex;
+    position: absolute;
+    height: calc(100vh - 5rem);
+    box-sizing: border-box;
+    top: 80px;
+    right: 0;
+    background: white;
+    z-index: 3;
+    width: 25rem;
+    border-top: 1px solid lightblue;
+    overflow: hidden;
+    padding: 10px;
+    .comment-search-inner{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        .header{
+                display: flex;
+                justify-content: space-between;
+                .title{
+                    font-weight: 500;
+                }
+                mat-icon{
+                    cursor: pointer;
+                }
+        }
+        .search-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .search{
+                display: flex;
+                align-items: center;
+                background: white;
+                gap: 5px;
+                height: 35px;
+                padding: 0px 5px 0px 5px;
+                border-radius: 3px;
+                border: 1px solid gainsboro;
+                mat-icon{
+                    color: gray;
+                }
+                input{
+                    width: 100%;
+                    height: 80%;
+                    border: none;
+                }
+        }
+        .filter-marker-type{
+            .filter-heading{
+                display: flex;
+                flex-direction: column;
+                h3{
+                    font-weight: normal;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        }
+    }
+}

@@ -45,7 +45,7 @@
     height: calc(100vh - 5rem);
     width: 25rem;
     box-sizing: border-box;
-    // padding: 8px 0px 0px 8px;
+    z-index: 2;
     overflow: hidden;
     .left-side-panel__header{
         display: flex;
