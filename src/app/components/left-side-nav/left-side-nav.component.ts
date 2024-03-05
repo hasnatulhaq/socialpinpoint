@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component ,ViewChild, ElementRef } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
+
 
 @Component({
   selector: 'app-left-side-nav',
@@ -9,5 +10,11 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './left-side-nav.component.scss'
 })
 export class LeftSideNavComponent {
+  @ViewChild('leftPanel', { static: false }) leftPanel!: ElementRef;
 
+  closePanel(): void {
+    if (this.leftPanel) {
+      this.leftPanel.nativeElement.style.display = 'none';
+    }
+  }
 }

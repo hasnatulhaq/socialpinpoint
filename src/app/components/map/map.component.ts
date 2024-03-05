@@ -1,11 +1,15 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
 import * as L from 'leaflet';
+
 
 
 @Component({
   selector: 'app-map',
   standalone: true,
-  imports: [],
+  imports: [MatButtonModule, MatMenuModule , MatIcon],
   templateUrl: './map.component.html',
   styleUrl: './map.component.scss'
 })

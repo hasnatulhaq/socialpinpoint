@@ -1,1 +1,14 @@
-<div id="map"></div>
+<div id="map">
+    <div class="map-legend">
+        <button mat-button [matMenuTriggerFor]="aboveMenu">
+            <mat-icon> format_list_bulleted </mat-icon>
+        </button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+          <div class="legend-header">
+            <span>legend</span>
+            <mat-icon> close</mat-icon>
+          </div>
+</mat-menu>
+    </div>
+</div>
+

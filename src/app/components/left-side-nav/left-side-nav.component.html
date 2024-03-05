@@ -23,11 +23,11 @@
         </div>
     </div>
 </nav>
-<div class="left-side-panel">
+<div class="left-side-panel" #leftPanel>
     <div>
         <div class="left-side-panel__header">
             <div class="title">About</div>
-            <mat-icon>close</mat-icon>
+            <mat-icon  (click)="closePanel()">close</mat-icon>
         </div>
         <div class="left-side-panel__content">
             <p>
